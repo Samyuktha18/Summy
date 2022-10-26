@@ -2,7 +2,7 @@ from __future__ import unicode_literals
 from implib import get_text
 from implib import readingTime
 from flask import Flask, render_template, request
-from sp_sum import summarize_sentiment
+from implib import summarize_sentiment
 
 import time
 import spacy
