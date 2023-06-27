@@ -3,7 +3,8 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Summaryzer</title>
+  <title>Summarizer</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,7 +16,7 @@
 <body><div class="navbar-fixed">
    <nav class="grey darken-4" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Summaryzer</a>
+      <a id="logo-container" href="#" class="brand-logo">Summarizer</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="{{url_for('index')}}">Home</a></li>
         <li><a href="#aboutapp">About</a></li>
@@ -32,22 +33,28 @@
       </ul>
 <!--Slider -->
  <section class="slider">
+  
+  
   <div id="index-banner" class="parallax-container">
+
      <ul class="slides">
       <li>
-        <img src="https://unsplash.com/photos/nN1HSDtKdlw" alt="Unsplashed background" alt="">
+        <img src="https://images.hdqwalls.com/wallpapers/colorful-mountains-night-minimal-8k-w5.jpg"><!--alt="Unsplashed background" alt="">--> 
         <div class="caption center-align">
-          <h2>SUMMY SUMMARYZER</h2>
+          <h2><font color="black"><b>SUMMY SUMMARIZER</b></font></h2>
            <div class="row center">
-          <a href="{{url_for('index')}}" id="download-button" class="btn-large waves-effect waves-light blue lighten-1">Refresh</a>
+          <a href="{{url_for('index')}}" id="download-button" class="btn-large waves-effect waves-light red lighten-1">Refresh</a>
         </div>
         </div>
       </li>
       <li>
        
-        <div class="caption left-align">
-        <a href="#aboutapp" class="btn btn-large waves-effect waves-light light-blue lighten-1">Learn More</a>
-        </div>
+       <img src ="https://images.hdqwalls.com/wallpapers/the-highlight-paradise-f6.jpg">
+       <div class="caption center-align">
+        <h2><font color="black"><b>Summarize With Precision, Simplify With Style!</b></font></h2>
+
+        <!--<a href="#aboutapp" class="btn btn-large waves-effect waves-light light-blue lighten-1">Learn More</a>-->
+      </div>
       </li>
    
     </ul>
@@ -62,6 +69,8 @@
       <div class="row">
         <div class="input-field col s12 m10">
           <div class="icon-block">
+            
+            
             <h2 class="center brown-text"><i class="material-icons">chrome_reader_mode</i></h2>
            <form method="POST" action="/analyze">
          <textarea name="rawtext" cols="3" rows="5" class="form-control" required="true" placeholder="Enter Text Here"></textarea>
